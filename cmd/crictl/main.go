@@ -92,10 +92,10 @@ func main() {
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
-			Name:   "conf",
+			Name:   "config-file, c",
 			EnvVar: "CRI_CONFIG_FILE",
 			Value:  "/etc/crictl.yaml",
-			Usage:  "config file for CRI",
+			Usage:  "config file for crictl",
 		},
 		cli.StringFlag{
 			Name:   "runtime-endpoint, r",
